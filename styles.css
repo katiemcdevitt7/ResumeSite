@@ -202,16 +202,18 @@ h3 {
     body {
         font-size: 12px;
     }
+    .blurb{
+        font-size: 8px;
+    }
 
     .MainContent {
-        margin-left: 20px;
+        margin-top: 27px;
+        margin-left: 195px;
         margin-right: 20px;
+        
     }
 
     .download-button {
-        margin-left: 50%;
-        transform: translateX(-50%);
-        width: 150px;
-        height: 40px;
+        display: none;
     }
 }
