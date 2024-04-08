@@ -198,9 +198,9 @@ h3 {
 }
 
 /* Styles for smaller screens (e.g., iPhone) */
-@media (max-width: 375px) {
+@media (max-width: 428px) {
     body {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .MainContent {
