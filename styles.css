@@ -182,23 +182,10 @@ h3 {
     transform: scale(1.05);
 }
 
-/* Styles for larger screens (e.g., desktop) */
-@media (min-width: 768px) {
-    body {
-        font-size: 18px;
-    }
 
-    .MainContent {
-        margin-left: 350px;
-    }
-
-    .download-button {
-        margin-left: 700px;
-    }
-}
 
 /* Styles for smaller screens (e.g., iPhone) */
-@media (max-width: 428px) {
+@media (max-width: 768px) {
     body {
         font-size: 12px;
     }
@@ -215,5 +202,12 @@ h3 {
 
     .download-button {
         display: none;
+    }
+    .sidebar {
+        width: 0;
+    }
+
+    .main-content {
+        margin-left: 0;
     }
 }
