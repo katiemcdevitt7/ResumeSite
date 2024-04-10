@@ -102,10 +102,12 @@ h3 {
 .polaroid {
     background-color: white;
     width: 16vw; /* Using viewport width */
-    height: 33vh; /* Using viewport height */
+    height: calc(14vw + 4vw); /* Using viewport height */
     box-shadow: 0.2vw 0.4vw 0.6vw rgba(0, 0, 0, 0.1); /* Using viewport width */
     margin-left: 1.5vw; /* Using viewport width */
     transform: rotate(10deg);
+    position: relative;
+    
 }
 
 .polaroidIMG {
@@ -116,6 +118,8 @@ h3 {
 }
 
 .Note {
+    object-fit: contain;
+    font-size: 1.2vw;
     font-family: Marker Felt;
     font-stretch: expanded;
     color: #01021cd3;
@@ -193,7 +197,7 @@ h3 {
     }
     
     .blurb {
-        font-size: 0.8vw;
+        font-size: 1vw;
     }
 
     .MainContent {
@@ -208,17 +212,19 @@ h3 {
 
     .SideBar {
         width: 0;
+        padding-top: 10vh;
+    }
+    .sbOption{
+        display: none;
     }
 
     .main-content {
         margin-left: 0;
     }
-    .polaroid {
-        background-color: white;
-        width: 16vw; /* Using viewport width */
-        height: 10vh; /* Using viewport height */
-        box-shadow: 0.2vw 0.4vw 0.6vw rgba(0, 0, 0, 0.1); /* Using viewport width */
-        margin-left: 1.5vw; /* Using viewport width */
-        transform: rotate(10deg);
+    .polaroidIMG {
+        object-fit: contain;
+        width: 13vw; /* Using viewport width */
+        height: 13vw; /* Using viewport width */
+        margin-top: 5vh; /* Using viewport height */
     }
 }
