@@ -225,6 +225,6 @@ h3 {
         object-fit: contain;
         width: 13vw; /* Using viewport width */
         height: 13vw; /* Using viewport width */
-        margin-top: 5vh; /* Using viewport height */
+        margin-top: .5vh; /* Using viewport height */
     }
 }
