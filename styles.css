@@ -92,7 +92,7 @@ h3 {
     text-align: center;
     text-decoration: underline;
     font-family: 'georgia';
-    font-size: 2.5vw; /* Using viewport width */
+    font-size: 3vw; /* Using viewport width */
     padding-top: 1vh; /* Using viewport height */
 }
 
@@ -130,7 +130,7 @@ h3 {
 
 .blurb {
     font-family: 'Verdana';
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     font-family: 'Verdana';
     font-stretch: expanded;
     color: #01021cd3;
@@ -183,15 +183,16 @@ li{
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 1vw; 
+    border-radius: 2vw; 
     background-color: #1f856cb8;
     box-shadow: 0.2vw 0.4vw 0.6vw rgba(0, 0, 0, 0.34); 
     transition: background-color 0.3s ease;
-    width: 11vw; 
-    height: 3vw;
+    width: 17vw; 
+    height: 5vw;
     align-self: flex-start;
     justify-content: flex-start;
     margin-left: -7vw;
+    align-content: center;
 }
 
 .download-button:hover {
@@ -253,9 +254,25 @@ li{
     .polaroidIMG {
         margin-top: .5vh; /* Using viewport height */
     }
- 
- 
+    .download-button{
+        font-size: 1.5vw;
+        width: 18vw;
+    }
+    
+    .description{
+        font-size: 2.2vw;
+    }
+    h1{
+        font: 3.2vw;
+    }
+    h4 {
+        font-size: 2.2vw;
+    }
 
+    li {
+        font-size: 2vw;
+    }
+ 
     .SideBar {
         padding-top: 10vh;
     }
