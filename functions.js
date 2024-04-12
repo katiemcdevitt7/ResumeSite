@@ -5,7 +5,6 @@ function navigateToPage(url) {
 document.addEventListener('DOMContentLoaded', () => {
     const toggleBtn = document.getElementById('toggleBtn');
     const SideBar = document.getElementById('SideBar');
-    const MainContent = document.getElementById('MainContent');
     const menubutton = document.getElementById('menubutton');
     const menubutton2 = document.getElementById('menubutton2');
     const menubutton3 = document.getElementById('menubutton3');

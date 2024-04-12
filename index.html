@@ -12,35 +12,39 @@
 
 <div class="Container"> 
     <div class="SideBar" id="SideBar">  
-        <button id="toggleBtn">Menu</button>
-        <div onclick = "alert('NOT DONE')" class="sbOption" id="menubutton"> Home Page </div>
+        <button class = "toggleBtn" id="toggleBtn">Menu</button>
+        <div onclick="navigateToPage('index.html')" class="sbOption" id="menubutton"> Home Page </div>
         <div onclick = "navigateToPage('work_ex_page.html')" class = "sbOption" id="menubutton2"> Work Experience </div>
-        <div onclick = "alert('NOT DONE')" class="sbOption" id="menubutton3"> Skills </div>
-        <div onclick = "alert('NOT DONE')" class="sbOption" id="menubutton4"> Projects and Certifications</div>
+        <div onclick = "navigateToPage('skills.html')" class="sbOption" id="menubutton3"> Skills </div>
+        <div onclick = "navigateToPage('projects_certs.html')"  class="sbOption" id="menubutton4"> Projects and Certifications</div>
         <div onclick = "alert('NOT DONE')" class="sbOption" id="menubutton5"> Some More About Me</div>
     </div>
     <div class="MainContent" id="MainContent">
 
              <h3>About Me</h3>
                 <div class="PhotoParagraph"> 
-                    <p class="blurb" style="margin-top: 10px; padding: 30px;"> 
-                        At the start of college, I initially pursued a degree in Education with a focus on Mathematics. However, my passion for 
-                        computer science soon emerged, prompting me to switch my major during my sophomore year. Alongside my major in computer science, I maintained a minor in Mathematics. 
-                        This shift in academic focus proved to be highly rewarding, as I excelled in both my major and minor courses, consistently earning nearly perfect straight A's. 
-                        By the time of my graduation in May 2022, I had achieved an impressive overall GPA of 3.7, with an outstanding 3.9 GPA specifically within my major.
-                        As a testament to my academic achievements, I graduated cum laude, reflecting my dedication and commitment to my studies.
+                    <p class="blurb" style="padding-right: 5vw;"> 
+                        Welcome and thank you for visiting my website!
+                        My Name is Katie McDevitt and I'm currently working as a software developer and I really love being in the tech industry. 
+                        It's always changing and there's so much to learn, which I find really exciting. 
+                        In my latest project, I got to do a lot of designing and creating API endpoints to handle and move data around.
+                        I've been lucky enough to be involved in every step of software development, from the initial planning and designing right through to programming and quality assurance.
+                        I've also been working with Amazon Web Services, using tools like S3, DynamoDB tables, Redshift, and API Lambdas. 
+                        I even had the chance to help design some DynamoDB and Redshift tables. 
+                        I genuinely enjoy the tech field because it offers so much room to grow and learn. 
+                        I like pushing myself, especially in a field that can be as complex as tech. 
                     </p>
                     <div class="polaroid">
-                        <img src = "images/graduation.png" class="polaroidIMG">
-                        <p class="Note"> May 2022: Adelphi Graduation</p>
+                        <img src = "images/computer.png" class="polaroidIMG">
+                        <p class="Note"> Current Software Developer</p>
                     </div>
                 </div>
                 <div class="PhotoParagraph"> 
                     <div class="polaroid"  style="transform: rotate(-10deg);">
-                        <img src = "images/thinking4.png" class="polaroidIMG">
-                        <p class="Note"> Problem = Solved </p>
+                        <img src = "images/thinking.png" class="polaroidIMG">
+                        <p class="Note"> Problem Solver </p>
                     </div>
-                    <p class="blurb" style="margin-top: 50px; padding: 20px;"> 
+                    <p class="blurb" style="padding-left: 5vw;"> 
                         I have a passion for problem-solving and thrive on being presented with challenging issues. 
                         This is why I am drawn to computer science and software development. 
                         Additionally, I am enthusiastic about data analytics and data science, as both require strong critical thinking skills. 
@@ -49,7 +53,7 @@
                         </p>
                 </div>
                 <div class="PhotoParagraph"> 
-                    <p class="blurb" style="margin-top: 50px; padding: 20px;"> 
+                    <p class="blurb" style="padding-right: 5vw;"> 
                     In my journey through the tech world, I've developed a keen interest in both data science and software engineering.
                     On my Work Experience Page, you'll see that I've delved deep into data from both the development and analytical sides, giving me a well-rounded perspective on how to handle it effectively.
                     This mix of experiences has really sparked my curiosity in both areas.
@@ -59,7 +63,7 @@
                     </p>
                     <div class="polaroid">
                         <img src = "images/looking.png" class="polaroidIMG">
-                        <p class="Note">Future Plans </p>
+                        <p class="Note">Future Goals</p>
                     </div>
                 </div>
             
