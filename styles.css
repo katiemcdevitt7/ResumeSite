@@ -8,8 +8,9 @@ body {
 
 /* Default styles for your website */
 h1 {
+    font-size: 3vw;
     color: #0a0058a5;
-    text-align: center;
+    text-align: left;
     font-stretch: expanded;
 }
 
@@ -41,6 +42,7 @@ h1 {
     padding-top: 20vh; /* Using viewport height */
     z-index: 1;
     position: fixed;
+    width: 0;
 }
 
 .sbTitle {
@@ -57,7 +59,7 @@ h1 {
 }
 
 .sbOption {
-    display: inline-block;
+    display: none;
     font-size: 1.2vw; /* Using viewport width */
     font-weight: bold;
     color: white;
@@ -65,7 +67,7 @@ h1 {
     text-decoration: none;
     cursor: pointer;
     border: none;
-    border-radius: 5%;
+    border-radius: 1vw;
     background-color: #161962b8;
     box-shadow: 0.2vw 0.4vw 0.6vw rgba(0, 0, 0, 0.1); /* Using viewport width */
     transition: background-color 0.3s ease;
@@ -80,10 +82,9 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5vh; /* Using viewport height */
-   /* Using viewport width */
-    margin-bottom: 10vh; /* Using viewport height */
-    width: 100vw; /* Using viewport width */
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    width: 100vw; 
 }
 
 h3 {
@@ -92,17 +93,19 @@ h3 {
     text-decoration: underline;
     font-family: 'georgia';
     font-size: 2.5vw; /* Using viewport width */
-    padding-top: 5vh; /* Using viewport height */
+    padding-top: 1vh; /* Using viewport height */
 }
 
 .PhotoParagraph {
     display: flex;
+    align-items: center;
+    padding: 10px;
 }
 
 .polaroid {
     background-color: white;
-    width: 16vw; /* Using viewport width */
-    height: calc(14vw + 4vw); /* Using viewport height */
+    width: 18vw; /* Using viewport width */
+    height: calc(16vw + 6vw); /* Using viewport height */
     box-shadow: 0.2vw 0.4vw 0.6vw rgba(0, 0, 0, 0.1); /* Using viewport width */
     margin-left: 1.5vw; /* Using viewport width */
     transform: rotate(10deg);
@@ -112,8 +115,8 @@ h3 {
 
 .polaroidIMG {
     object-fit: contain;
-    width: 14vw; /* Using viewport width */
-    height: 14vw; /* Using viewport width */
+    width: 16vw; /* Using viewport width */
+    height: 16vw; /* Using viewport width */
     margin-top: 1vh; /* Using viewport height */
 }
 
@@ -126,8 +129,8 @@ h3 {
 }
 
 .blurb {
-    font-family: Arial, sans-serif;
-    font-size: 1.2vw; /* Using viewport width */
+    font-family: 'Verdana';
+    font-size: 1.3vw;
     font-family: 'Verdana';
     font-stretch: expanded;
     color: #01021cd3;
@@ -135,19 +138,23 @@ h3 {
     text-align: left;
     margin-left: 1.5vw; /* Using viewport width */
     width: 50vw; /* Using viewport width */
-}
+    padding: 10px;
+    }
 
-.h4 {
+h4 {
+    font-size: 1.7vw;
     color: #01021cd3;
 }
 
 .WorkingPage {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+.Working_Bubbles {
+    width: 70vw;/* Using viewport width */
 
+}
 .workExBubble {
     padding: 2vw; /* Using viewport width */
     border: 0.2vw solid transparent; /* Using viewport width */
@@ -163,25 +170,28 @@ h3 {
     width: 80vw; /* Using viewport width */
 }
 
+li{
+    font-size: 1.4vw;
+    width: 70vw;
+}
+
 .download-button {
     display: inline-block;
-    padding: 0.5vw 1vw; /* Using viewport width */
-    font-size: 1.2vw; /* Using viewport width */
+    font-size: 1vw;
     font-weight: bold;
     color: white;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 1vw; /* Using viewport width */
+    border-radius: 1vw; 
     background-color: #1f856cb8;
-    box-shadow: 0.2vw 0.4vw 0.6vw rgba(0, 0, 0, 0.34); /* Using viewport width */
+    box-shadow: 0.2vw 0.4vw 0.6vw rgba(0, 0, 0, 0.34); 
     transition: background-color 0.3s ease;
-    width: 80vw; /* Using viewport width */
-    height: 5vh; /* Using viewport height */
-    line-height: 3vh; /* Using viewport height */
-    position: fixed;
-    z-index: 2;
-    margin-left: 0;
+    width: 11vw; 
+    height: 3vw;
+    align-self: flex-start;
+    justify-content: flex-start;
+    margin-left: -7vw;
 }
 
 .download-button:hover {
@@ -190,41 +200,71 @@ h3 {
     transform: scale(1.05);
 }
 
-/* Styles for smaller screens (e.g., iPhone) */
-@media (max-width: 800px) {
-    body {
-        font-size: 1.2vw;
-    }
-    
-    .blurb {
-        font-size: 1vw;
+.description {
+    font-size: 1.3vw;
+    font-family: 'Verdana';
+    font-stretch: expanded;
+    color: #01021cd3;
+    line-height: 1.5;
+    text-align: left;
+    justify-content: center;
+    margin-left: 1.5vw; /* Using viewport width */
+    width: 70vw; /* Using viewport width */
+    padding: 10px;
     }
 
+.toggleBtn {
+    display: inline-block;
+    font-size: 1vw; /* Using viewport width */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5vw;
+    background-color: #161962b8;
+    box-shadow: 0.2vw 0.4vw 0.6vw rgba(0, 0, 0, 0.1); /* Using viewport width */
+    transition: background-color 0.3s ease;
+    width: 5vw; 
+    height: 3vw; 
+    line-height: 1vw; 
+    padding: 0px;
+
+    }
+    
+.toggleBtn:hover {
+    background-color: #69a1bbbb;  /* Darker shade for hover effect */
+    }
+/* Styles for smaller screens (e.g., iPhone) */
+@media (max-width: 800px) {
+   
+    
     .MainContent {
         margin-top: 2vh;
         margin-left: 5vw;
         margin-right: 5vw;
     }
-
-    .download-button {
-        display: none;
+    .blurb{
+    font-size: 2vw;
+    width: 60vw; 
+  
     }
+    .polaroidIMG {
+        margin-top: .5vh; /* Using viewport height */
+    }
+ 
+ 
 
     .SideBar {
-        width: 0;
         padding-top: 10vh;
-    }
-    .sbOption{
-        display: none;
     }
 
     .main-content {
         margin-left: 0;
     }
-    .polaroidIMG {
-        object-fit: contain;
-        width: 13vw; /* Using viewport width */
-        height: 13vw; /* Using viewport width */
-        margin-top: .5vh; /* Using viewport height */
+    .WorkingPage {
+        margin-left: -5vw;
     }
+    
 }
